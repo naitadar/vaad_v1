@@ -1,0 +1,237 @@
+body{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+	margin:0;
+}
+a{ display:block;
+text-decoration:none; 
+}
+
+.wrapper{
+	width:320px;
+	height:480px;
+	overflow:hidden;
+	background-color:#c7c9be;
+}
+
+/* -------------------- menu -------------------*/
+
+.menu{
+	position: fixed;
+	display: block;
+	height: 48px;
+	background-image: url(../images/nav_bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	width:inherit;
+}
+.menu .gift{
+	background-image:url(../images/icons.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	height:48px;
+	width:50px;
+	float:left;
+}
+.menu .split_line{
+	float:left;
+	display:block;
+	background-image:url(../images/icons.png);
+	background-position:-50px 0;
+	background-repeat:no-repeat;
+	width:16px;
+	height:48px
+}
+.menu .search_box{
+	float:left;
+	display:block;
+	margin-top:7px;
+}
+.menu .search {
+	-webkit-box-shadow: inset 0px 2px 3px 0px #acaea4;
+	box-shadow: inset 0px 2px 3px 0px #acaea4;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #cbcdc2;
+	border: thin solid #9d9f94;
+	height:25px;
+	background-image:url(../images/icons.png);
+	background-position:-100px 0;
+	background-repeat:no-repeat;
+	direction:rtl;
+	width:156px;
+	padding-right:5px;
+}
+.menu .logo{
+	background-image:url(../images/icons.png);
+	background-position: -150px 0;
+	background-repeat:no-repeat;
+	height:43px;
+	width:82px;
+	float:right;
+	padding-top:7px;
+	padding-left:3px;
+}
+.menu .logo img{
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 1px 2px 2px #a0a299;
+	box-shadow: 1px 2px 2px #a0a299;
+	border: 1px solid #6f7166;
+	width: 75px;
+	height: 25px;
+}
+.menu .back_btn{
+	background-image:url(../images/icons.png);
+	background-position:-100px -50px;
+	background-repeat:no-repeat;
+	height:48px;
+	width:75px;
+	float:left;
+}
+.menu .page_number{
+	background-image:url(../images/icons.png);
+	background-position: 0px -100px;
+	background-repeat:no-repeat;
+	height:35px;
+	width:132px;
+	float:left;
+	padding-top:11px;
+	padding-left:13px;
+	text-align:center;
+	font-size:18px;
+	color:#6d6e66;
+	font-weight:800px;
+	text-shadow: 2px 1px 1px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=2, offy=1);
+}
+.menu .next{
+		background-image:url(../images/icons.png);
+	background-position: -250px -50px;
+	background-repeat:no-repeat;
+	float:right;
+	width:50px;
+	height:45px;
+}
+.menu .prev{
+	background-image:url(../images/icons.png);
+	background-position: -200px -50px;
+	background-repeat:no-repeat;
+	float:right;
+	width:50px;
+	height:45px;
+
+}
+
+/* -------------------- coupons -------------------*/
+
+.coupon_list{
+	padding-top: 42px;
+	direction: rtl;
+	background-color: #FFF;
+	border: 1px solid #aaaca3;
+}
+.coupon_list a {
+	height:73px;
+	border-bottom:1px solid #D3D3D3;
+	clear:both;
+}
+.coupon_list .pic{
+	float:right;	
+	margin-left:5px;
+}
+.coupon_list .arrow{
+	background-image:url(../images/icons.png);
+	background-position:-250px 0;
+	background-repeat:no-repeat;
+	font-size: 11px;
+	font-weight:bold;
+	color: #989797;
+	float:left;
+	width:55px;
+	padding-top:30px
+}
+.coupon_list .title{
+	font-size: 13px;
+	color: #4d4e45;
+	display: block;
+	padding-top: 8px;
+    padding-bottom: 2px;
+	width:265px;	
+}
+.coupon_list .text{
+	font-size: 12px;
+	color: #989797;
+	display: block;
+    padding-bottom: 4px;
+	width:265px;
+}
+
+.coupon_list .amount{
+	font-size: 11px;
+	color: #989797;
+}
+.coupon_list .stars_bg{
+	
+	direction:ltr;
+	display:block;
+	width:80px;
+	height:11px;
+  background: url(../images/icons.png)repeat scroll 0 -50px transparent;
+  overflow:hidden;
+  float:right;
+  margin-top:2px;
+
+}
+.coupon_list .stars{
+	display:block;
+	width:72%;
+	height:11px;
+	background: url(../images/icons.png) repeat scroll 0 -60px transparent;
+
+}
+/* -------------------- coupon page -------------------*/
+.coupon_info{
+	background-color: #FFFFFF;
+	background-image: url(../public/big_pic.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	border: 1px solid #AAACA3;
+	direction: rtl;
+	height: 210px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-top: 42px;
+	padding-right:150px;
+}
+.coupon_info .white_bg{
+	background-color: #FFF;
+	display:block;
+	width:155px;
+	height:67px;
+	border-bottom:1px solid #D3D3D3;
+	padding-top:18px
+}
+.white_bg .coupon_title_org{
+	font-size:18px;
+	color: #d05401;
+	display:block;
+	text-align:center;
+}
+.white_bg .coupon_title_gra{
+	font-size:17px;
+	color: #4d4e45;
+	display:block;
+	text-align:center;
+}
+.invitation{
+	position:absolute;
+	top:250px;
+	background-image: url(../images/icons.png);
+	background-position: 0 -150px;
+	background-repeat:no-repeat;
+	width:317px;
+	height:60px;
+}
+
+
